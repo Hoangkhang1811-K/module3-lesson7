@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phát triển trang web xem hoạt hình trực tuyến</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Radio dùng để chọn video, mặc định chọn video 1 -->
+<input type="radio" name="video" id="video1" checked>
+<input type="radio" name="video" id="video2">
+<input type="radio" name="video" id="video3">
+<input type="radio" name="video" id="video4">
+
+<div class="page">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-text">Phim</span>
+            <span class="logo-badge">HoạtHình</span>
+        </div>
+    </header>
+
+    <!-- HEAD-LINK -->
+    <nav class="head-link">
+        <a href="#">Phim hoạt hình</a>
+        <span>|</span>
+        <a href="#">Phim hoạt hình yêu thích</a>
+        <span>|</span>
+        <a href="#">Nhân vật hoạt hình</a>
+        <span>|</span>
+        <a href="#">Góp ý</a>
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="content">
+        <!-- LEFT CONTENT -->
+        <aside class="left-content">
+            <label for="video1" class="video-item item-1">
+                <img src="https://img.youtube.com/vi/kX3nB4PpJko/mqdefault.jpg" alt="Welcome đến với khách sạn Nobi">
+                <h3>Welcome đến với khách sạn Nobi</h3>
+                <p>5,147,528 lượt xem</p>
+                <span>Channel Fun</span>
+            </label>
+
+            <label for="video2" class="video-item item-2">
+                <img src="https://img.youtube.com/vi/aqz-KE-bpKQ/mqdefault.jpg" alt="Suneo khổng lồ">
+                <h3>Suneo khổng lồ</h3>
+                <p>5,147,528 lượt xem</p>
+                <span>Doraemon Vietsub</span>
+            </label>
+
+            <label for="video3" class="video-item item-3">
+                <img src="https://img.youtube.com/vi/ysz5S6PUM-U/mqdefault.jpg" alt="Cô bé thần gió">
+                <h3>Cô bé thần gió</h3>
+                <p>5,147,528 lượt xem</p>
+                <span>Doraemon Vietsub</span>
+            </label>
+
+            <label for="video4" class="video-item item-4">
+                <img src="https://img.youtube.com/vi/jNQXAC9IVRw/mqdefault.jpg" alt="Chiếc máy tạo kẹo bông">
+                <h3>Chiếc máy tạo kẹo bông</h3>
+                <p>5,147,528 lượt xem</p>
+                <span>Doraemon Vietsub</span>
+            </label>
+        </aside>
+
+        <!-- RIGHT CONTENT -->
+        <section class="right-content">
+            <article class="video-panel panel-1">
+                <div class="video-frame">
+                    <iframe
+                            src="https://www.youtube.com/embed/kX3nB4PpJko"
+                            title="Welcome đến với khách sạn Nobi"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <h2>Welcome đến với khách sạn Nobi</h2>
+                    <p><strong>Tác giả:</strong> Channel Fun</p>
+                    <p>
+                        Bộ phim hoạt hình vui nhộn dành cho thiếu nhi, kể về những tình huống hài hước
+                        và gần gũi trong cuộc sống hằng ngày. Nội dung nhẹ nhàng, dễ xem, phù hợp để giải trí.
+                    </p>
+                </div>
+            </article>
+
+            <article class="video-panel panel-2">
+                <div class="video-frame">
+                    <iframe
+                            src="https://www.youtube.com/embed/aqz-KE-bpKQ"
+                            title="Suneo khổng lồ"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <h2>Suneo khổng lồ</h2>
+                    <p><strong>Tác giả:</strong> Doraemon Vietsub</p>
+                    <p>
+                        Tập phim kể về một sự cố bất ngờ khiến Suneo rơi vào tình huống dở khóc dở cười.
+                        Phần hình ảnh sinh động, nhân vật quen thuộc và nội dung mang tính giải trí cao.
+                    </p>
+                </div>
+            </article>
+
+            <article class="video-panel panel-3">
+                <div class="video-frame">
+                    <iframe
+                            src="https://www.youtube.com/embed/ysz5S6PUM-U"
+                            title="Cô bé thần gió"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <h2>Cô bé thần gió</h2>
+                    <p><strong>Tác giả:</strong> Doraemon Vietsub</p>
+                    <p>
+                        Một câu chuyện hoạt hình giàu trí tưởng tượng với những chi tiết thú vị,
+                        màu sắc tươi sáng và tiết tấu dễ theo dõi. Phù hợp với mô hình website xem hoạt hình trực tuyến.
+                    </p>
+                </div>
+            </article>
+
+            <article class="video-panel panel-4">
+                <div class="video-frame">
+                    <iframe
+                            src="https://www.youtube.com/embed/jNQXAC9IVRw"
+                            title="Chiếc máy tạo kẹo bông"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <h2>Chiếc máy tạo kẹo bông</h2>
+                    <p><strong>Tác giả:</strong> Doraemon Vietsub</p>
+                    <p>
+                        Bộ phim mang phong cách vui vẻ, gần gũi và hài hước. Trang web sử dụng cột trái
+                        để hiển thị danh sách video, cột phải để hiển thị video đang được chọn.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        © 2017 - Thiết kế web bởi trang hoathinhvn.net
+    </footer>
+</div>
+
+</body>
+</html>

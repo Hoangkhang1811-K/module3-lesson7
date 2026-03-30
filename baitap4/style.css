@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Ẩn radio */
+input[type="radio"] {
+    display: none;
+}
+
+.page {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+/* HEADER */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #f3f3f3;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 16px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.logo-text {
+    color: #666;
+}
+
+.logo-badge {
+    color: #fff;
+    background: #e53935;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 24px;
+}
+
+/* HEAD-LINK */
+.head-link {
+    background: #fafafa;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 10px 12px;
+}
+
+.head-link a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 8px;
+    transition: 0.2s;
+}
+
+.head-link a:hover {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.head-link span {
+    color: #999;
+}
+
+/* CONTENT */
+.content {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 16px;
+}
+
+/* LEFT CONTENT */
+.left-content {
+    width: 34%;
+}
+
+.video-item {
+    display: block;
+    margin-bottom: 14px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 6px;
+    transition: 0.2s;
+}
+
+.video-item:hover {
+    background: #f8f8f8;
+    border-color: #aaa;
+}
+
+.video-item img {
+    width: 100%;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.video-item h3 {
+    font-size: 14px;
+    color: #222;
+    margin-bottom: 2px;
+}
+
+.video-item p,
+.video-item span {
+    font-size: 12px;
+    color: #666;
+    display: block;
+}
+
+/* RIGHT CONTENT */
+.right-content {
+    width: 66%;
+    min-height: 450px;
+}
+
+.video-panel {
+    display: none;
+}
+
+.video-frame iframe {
+    width: 100%;
+    height: 340px;
+    border: none;
+    display: block;
+}
+
+.video-info {
+    margin-top: 12px;
+}
+
+.video-info h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.video-info p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* Mặc định / đổi video theo radio */
+#video1:checked ~ .page .panel-1,
+#video2:checked ~ .page .panel-2,
+#video3:checked ~ .page .panel-3,
+#video4:checked ~ .page .panel-4 {
+    display: block;
+}
+
+/* Highlight video đang chọn */
+#video1:checked ~ .page .item-1,
+#video2:checked ~ .page .item-2,
+#video3:checked ~ .page .item-3,
+#video4:checked ~ .page .item-4 {
+    border: 2px solid #e53935;
+    background: #fff3f3;
+}
+
+/* FOOTER */
+.footer {
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 14px 10px;
+    font-size: 13px;
+    color: #555;
+    background: #fafafa;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%;
+    }
+
+    .video-frame iframe {
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        font-size: 22px;
+    }
+
+    .logo-badge {
+        font-size: 18px;
+        padding: 3px 10px;
+    }
+
+    .head-link {
+        line-height: 2;
+    }
+
+    .head-link a,
+    .head-link span {
+        display: inline-block;
+    }
+
+    .video-frame iframe {
+        height: 220px;
+    }
+
+    .video-info h2 {
+        font-size: 18px;
+    }
+
+    .video-item h3 {
+        font-size: 13px;
+    }
+}
