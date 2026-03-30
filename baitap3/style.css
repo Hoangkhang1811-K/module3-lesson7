@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+.container {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    min-height: 50px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding: 16px 20px;
+    background: #2d2d2d;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-left a,
+.nav-right a {
+    color: #d9d9d9;
+    text-decoration: none;
+    padding: 16px 18px;
+    display: block;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    background: #111;
+    color: white;
+}
+
+.home-link {
+    background: #000;
+    color: white !important;
+}
+
+/* dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: black;
+    background: white;
+    padding: 12px 16px;
+}
+
+.dropdown-content a:hover {
+    background: #f1f1f1;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main {
+    display: flex;
+    min-height: 500px;
+}
+
+.left {
+    width: 20%;
+    background: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.left a {
+    display: block;
+    color: #2f80ed;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.content {
+    width: 60%;
+    padding: 25px;
+}
+
+.content h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    line-height: 1.6;
+}
+
+.content hr {
+    margin: 25px 0;
+}
+
+.content h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.right {
+    width: 20%;
+    background: #f1f1f1;
+    padding: 20px;
+}
+
+.ads {
+    background: white;
+    border: 1px solid #ddd;
+    height: 90px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background: #666;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-left {
+        flex-wrap: wrap;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .left,
+    .content,
+    .right {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+}
